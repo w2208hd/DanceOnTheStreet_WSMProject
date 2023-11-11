@@ -160,6 +160,8 @@ footer{
         width:80%;
         font-size:16px;
     }
+    .genre-text-div>h1{ font-size:25px; }
+    .genre-text-div h3{ font-size:20px; }
 }
 
 @media (max-width: 767px)  {
@@ -172,4 +174,6 @@ footer{
         width:90%;
         font-size:15px;
     }
+    .genre-text-div>h1{ font-size:20px; }
+    .genre-text-div h3{ font-size:15px; }
 }
