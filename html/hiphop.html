@@ -196,7 +196,14 @@
     </footer>
     <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
     <script src="../js/list_nav.js"></script>
-    <script src="../js/dropdown_nav.js"></script>
     <script src="../js/li_hyperlink_nav.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#nav ul.sub").hide();
+            $("#nav ul.menu li").click(function(){
+                $("ul",this).slideToggle("fast");
+            });
+        });
+    </script>
 </body>
 </html>
