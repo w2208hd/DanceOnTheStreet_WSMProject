@@ -1,0 +1,273 @@
+@keyframes fadein {
+    from {
+        opacity:0;
+        transform: translate(0px, 50px);
+    }
+    to {
+        opacity:1;
+        transform: translate(0px,-50px);
+    }
+}
+@font-face {
+    font-family: "NotoSansKRBlack"; /* 사용하고 싶은 font-family명을 지정 */
+    src: url("../fonts/NotoSansKR-Black.ttf") format("opentype"); /* 폰트파일 불러오기 */
+}
+@font-face {
+    font-family: "NotoSansKRBold"; /* 사용하고 싶은 font-family명을 지정 */
+    src: url("../fonts/NotoSansKR-Bold.ttf") format("opentype"); /* 폰트파일 불러오기 */
+}
+@font-face {
+    font-family: "NotoSansKRExtraBold"; /* 사용하고 싶은 font-family명을 지정 */
+    src: url("../fonts/NotoSansKR-ExtraBold.ttf") format("opentype"); /* 폰트파일 불러오기 */
+}
+@font-face {
+    font-family: "NotoSansKRRegular"; /* 사용하고 싶은 font-family명을 지정 */
+    src: url("../fonts/NotoSansKR-Regular.ttf") format("opentype"); /* 폰트파일 불러오기 */
+}
+
+ul li { list-style-type: none;}
+a { text-decoration: none;}
+a:link { color: white; }
+a:visited { color: white;}
+
+header {
+    background-color: #171717;
+    position: fixed;
+    /* 스크롤해도 항상 위치 고정하자 */
+    top: 0;
+    right: 0;
+    /*오른쪽 끝까지*/
+    left: 0;
+    /*왼쪽 끝까지 늘리기*/
+    z-index: 100;
+    /*책에 마우스 올렸을 때 가려지는 문제 해결*/
+}
+nav {height: 70px;}
+
+/* .nav.container */
+.nav.container {
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    color: #fff;
+}
+
+/* logo */
+.nav-logo {
+    float: left;
+    margin-left: 30px;
+    font-weight: bold;
+    font-family: "NotoSansKRBold";
+}
+
+/* nav-list */
+.nav-list {
+    display: flex;
+    margin-left: auto;
+    /* display:none; */
+    /* column-gap: 150px; */
+    font-family: "NotoSansKRRegular";
+}
+.nav-list>li {
+    width: 200px;
+    height: 70px;
+    text-align: center;
+    line-height: 70px;
+    cursor: pointer;
+}
+
+/* sub-menu */
+.sub-menu { display: none; }
+.sub-menu li { padding: 10px 20px; }
+.sub-menu>li {
+    cursor: pointer;
+    height: 20px;
+    line-height: 20px;
+    width: 200px;
+    text-align: center;
+    background-color: #171717;
+    z-index: 1;
+    font-family: "NotoSansKRRegular";
+}
+#oldschool-menu {
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: calc(50px + 360px);
+}
+#newschool-menu {
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: calc(50px + 160px);
+}
+
+/* nav-toggle */
+.nav-toggle {
+    visibility: hidden;
+}
+
+
+/* hover */
+.nav.container li:hover,
+.nav.container li:hover a { color:#eee; }
+/* .nav ul.nav-list li:hover {  } */
+ul.sub-menu li:hover{  background: #585858; color: #171717;  }
+.nav ul.nav-list li:not(:hover) a { color: #eee; }
+.nav ul.nav-list li .sub-menu a {
+    position: relative;
+    float: left;
+    display: block;
+    width: 100%;
+    z-index: 999;
+}
+
+
+/* tablet */
+@media (min-width:768px) and (max-width:991px) {
+    /* .nav-logo */
+    .nav-logo { margin-left: 10px; }
+
+    /* nav-list */
+    .nav-list>li { width: 150px; text-align: center; }
+
+    /* .sub-menu */
+    .sub-menu>li { width: 150px; display: block; }
+    #oldschool-menu { position: absolute; top: 70px; right: calc(50px + 260px); }
+    #newschool-menu { position: absolute; top: 70px; right: calc(50px + 110px); }
+}
+
+/* mobile */
+@media (max-width: 767px) {
+    /* .nav-logo */
+    .nav-logo { margin: 0 auto; }
+
+    /* .nav */
+    .nav.container { padding: 0 0px; }
+    .nav ul { width: 100%; margin: 0; padding: 0; }
+    .nav ul.nav-list li {
+        position: relative;
+        float: left;
+        width: 100%;
+        font-size: 20px;
+        display: block;
+        height: 100%;
+    }
+    .nav ul.nav-list li a { display: block; width: 100%; height: 100%; }
+
+    /* .nav-list */
+    .nav-list {
+        display: none;
+        position: absolute;
+        top: 70px;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+    }
+    .nav-list.show-menu { display: flex; height: auto;}
+    .nav-list>li {
+        width: 100%;
+        background-color: #171717;
+        border-top: 2px solid #fff;
+        /* display:none; */
+        position: static;
+    }
+
+    .nav-item { border-top: 2px solid #fff; }
+
+    /* .sub-menu */
+    #oldschool-menu {
+        position: static;
+        width: 95%;
+        z-index: 100;
+    }
+
+    #newschool-menu {
+        position: static;
+        width: 95%;
+        z-index: 100;
+    }
+    .nav-link { display: blink; }
+
+    /* .nav-toggle */
+    .nav-toggle {
+        visibility: visible;
+        position: absolute;
+        /* 햄버거 메뉴 공간을 차지하지 않게 .nav-logo를 가운데 */
+        right: 16px;
+        /* 햄버거 메뉴 원위치 */
+        cursor: pointer;
+    }
+
+    /* .show-menu */
+    .show-menu {
+        position: fixed;
+        height: 100px;
+    }
+}
+
+/* ul li { list-style-type: none; }
+a{ text-decoration: none; }
+a:link { color : white;}
+a:visited { color : white;}
+
+
+
+.menu-div{
+    position:absolute;
+    position:fixed;
+    width: 100%;
+    height: 50px;
+    background-color: #171717;
+    text-align:center;
+    display:table;
+    z-index:1;
+}
+#navBar{
+    position:fixed;
+    top: -100px;
+    transition: 0.7s;
+}
+.logo-li {
+    float:left;
+    margin-left: 70px;
+    line-height: 70px;
+    color:white;
+}
+.right{
+    float: right;
+    margin-left: 100px;
+    margin-right: 100px;
+    line-height: 70px;
+}
+.school-menu>li{
+    text-align: center;
+    background-color: #171717;
+    width:250px;
+    height:60px;
+}
+.menu-div > .menu-ul > li { position:relative;}
+.menu-div > .menu-ul > li > ul {
+	display:none;
+	position: absolute;
+}   
+.menu-div > .menu-ul > li:hover { cursor: pointer;}
+.menu-div > .menu-ul > li:hover > ul { display:block;}
+.menu-div > .menu-ul > li > ul > li:hover {display: block;}
+
+.school-menu > li{
+    position:relative;
+    right: 39%;
+}
+.newSchool-menu>li {
+    margin-right:10px;
+}
+.oldSchool-menu>li {
+    margin-left:8px;
+}
+
+@media (max-width:767px){
+    .right{
+        display:none;
+    }
+} */

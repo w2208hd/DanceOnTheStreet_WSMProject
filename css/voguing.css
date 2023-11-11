@@ -1,0 +1,341 @@
+*{
+    margin: 0; 
+    padding: 0;
+}
+/* body{
+    font-size: 1.5vw;
+} */
+/* p {
+    font-size: 0.9em; 100%보다 1.5배 크게 설정
+  } */
+  @font-face {
+    font-family: "NotoSansKRBlack"; /* 사용하고 싶은 font-family명을 지정 */
+    src: url("../fonts/NotoSansKR-Black.ttf") format("opentype"); /* 폰트파일 불러오기 */
+}
+@font-face {
+    font-family: "NotoSansKRBold"; /* 사용하고 싶은 font-family명을 지정 */
+    src: url("../fonts/NotoSansKR-Bold.ttf") format("opentype"); /* 폰트파일 불러오기 */
+}
+@font-face {
+    font-family: "NotoSansKRExtraBold"; /* 사용하고 싶은 font-family명을 지정 */
+    src: url("../fonts/NotoSansKR-ExtraBold.ttf") format("opentype"); /* 폰트파일 불러오기 */
+}
+@font-face {
+    font-family: "NotoSansKRRegular"; /* 사용하고 싶은 font-family명을 지정 */
+    src: url("../fonts/NotoSansKR-Regular.ttf") format("opentype"); /* 폰트파일 불러오기 */
+}
+/* 배경 */
+.voguing-pic-div{
+    width:100%;
+    height: 100vh;
+    /* padding-top: 50%; */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#voguing-pic-div-1{
+    background-image: url('../img/voguing-1.jpg');
+}
+#voguing-pic-div-2{
+    background-image: url('../img/voguing-2.jpg');
+}
+
+/* 제목 */
+.voguing-h1 {
+    position: absolute;
+    top: 12%;
+    left: 5%;
+    color: #C846AC;
+    font-size: 120px;
+    font-family: "NotoSansKRBlack";
+    font-style: italic;
+}
+
+.voguing-h2 {
+    position: absolute;
+    top: 35%; 
+    left: 5.5%;
+    color: white;
+    font-size: 50px;
+    font-family: "NotoSansKRExtraBold";
+}
+
+
+/* 문단 공통되는 것 */
+.voguing-div-text{
+    color:white;
+    font-family: "NotoSansKRRegular";
+    font-size:18px;
+}
+.voguing-rm-text{
+    color:white;
+    font-size:15px;
+    font-family: "NotoSansKRRegular";
+}
+
+
+/* 첫 번째 문단 */
+#voguing-div-text-1{
+    width:70%;
+    display:inline-block;
+}
+#voguing-explanation-div-1{
+    position:absolute;
+    top: 52%; 
+    left: 5%;
+}
+#voguing-div-rm-1{
+    position:absolute;
+    display:inline-block;
+    width:20%;
+    margin-left:30px;
+}
+#voguing-picture-1{
+    width: 100%;
+}
+#voguing-rm-text-1{
+    display:block;
+    left:35%;
+}
+
+/* 두 번째 문단 */
+#voguing-explanation-div-2{
+    position:absolute;
+    top: 95%; 
+    left: 5%;
+}
+#voguing-div-text-2{
+    width:93%;
+    display:inline-block;
+}
+
+/* 세 번째 문단 */
+#voguing-div-text-3{
+    width:69%;
+    display:in0ine-block;
+    position:relative;
+    left:23%;
+}
+#voguing-div-text-3>p{ text-align: right;}
+#voguing-explanation-div-3{
+    position:absolute;
+    top: 130%; 
+    left: 3%;
+}
+#voguing-div-rm-3{
+    position:absolute;
+    display:inline-block;
+    width:18%;
+    margin-left:30px;
+}
+#voguing-picture-3{
+    width: 100%;
+}
+#voguing-rm-text-3{
+    display:block;
+    left:35%;
+}
+
+/* 네 번째 문단 */
+#voguing-explanation-div-4{
+    position:absolute;
+    top: 170%; 
+    left: 5%;
+}
+#voguing-div-text-4{
+    width:93%;
+    display:inline-block;
+}
+
+.voguing-div-text p {
+    font-size: 1.3vw; /* vw 단위로 뷰포트에 따라 글자 크기 조절 */
+}
+
+/* 인물 소개 */
+/* .voguing-person-div-2{
+    position:absolute;
+    top: 190%;
+} */
+.voguing-person-title{
+    color:#fff;
+    font-family: "NotoSansKRBlack";
+    font-size:40px;
+    padding-top:30px;
+    padding-left:50px;
+}
+.voguing-person-div{
+    width:100%;
+    height:550px;
+    background-color: #0B0B0B;
+}
+.person-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.person-img{
+    width:90%;
+    height:auto;
+    border-radius: 300px;
+    align-self: center;
+}
+.person-eng-name{
+    font-size:27px;
+}
+.person-eng-name, .person-han-name{
+    color:#fff;
+    font-family: "NotoSansKRBold";
+    text-align: center;
+}
+.person-explanation{
+    color:#fff;
+    font-family: "NotoSansKRRegular";
+    text-align: center;
+    font-size:14px;
+    width:100%;
+}
+.voguing-person-div-2>.person-div{
+    width:16%;
+    display:inline-block;   
+    margin-left: 4%;
+    margin-right:4%;
+    margin-top: 40px;
+    vertical-align: top; /* 상단 정렬을 위해 추가 */
+}
+
+footer{
+    width:100%;
+    height:250px;
+    background-color: #171717;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-text-h1{ 
+    font-family: "NotoSansKRBlack";
+    font-size:30px;
+    text-align: center;
+}
+.footer-text-p{
+    font-family: "NotoSansKRRegular";
+    font-size:16px;
+}
+
+    /* 태블릿 크기 */
+@media (min-width:767px) and (max-width:991px)  {
+    .voguing-pic-div{
+        width:100%;
+        height: 120vh;
+    }
+
+    /* body {
+        font-size: 1.4em;
+    } */
+    /* 제목 */
+    .voguing-pic-div{
+        height: 71vh;
+    }   
+    .voguing-h1 {
+        font-size: 80px;
+    }
+    .voguing-h2 {
+        font-size: 30px;
+        top:28%;
+    }
+
+
+    .voguing-div-text{
+        font-size:13px;
+    }
+
+    /* #voguing-div-rm-1{
+        margin-left:30   px;
+    } */
+    .voguing-div-text p {
+        font-size: 1.5vw; /* vw 단위로 뷰포트에 따라 글자 크기 조절 */
+    }
+    
+    #voguing-explanation-div-1{
+        top: 36%;
+    }
+
+
+    #voguing-explanation-div-2{
+        top: 65%;
+    }
+    #voguing-explanation-div-3{
+        top: 93%;
+    }
+    #voguing-explanation-div-4{
+        top: 122%;
+    }
+
+    .voguing-person-div-2 > .person-div {
+        width: 30%; /* 컨테이너의 48%를 차지하도록 너비 설정 */
+        margin-left: 9%;
+        margin-right:9%;
+        margin-top: 40px;
+    }
+    .voguing-person-div{
+        width:100%;
+        height:1010px;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .voguing-pic-div{
+        height: 65vh;
+    }   
+    .voguing-h1 {
+        font-size: 50px;
+        top:10%;
+    }
+    
+    .voguing-h2 {
+        font-size: 20px;
+        top:20%;
+    }
+    /* .voguing-div-text{
+        font-size:10px;
+    } */
+    #voguing-explanation-div-1{
+        top: 26%; 
+    }
+    #voguing-div-rm-1{
+        margin-left:20px;
+    }
+    #voguing-explanation-div-2{
+        top: 53%;
+    }
+    #voguing-explanation-div-3{
+        top: 80%;
+    }
+    #voguing-div-rm-3{
+        margin-left:10px;
+    }
+    #voguing-explanation-div-4{
+        top: 110%;
+    }
+
+    .voguing-div-text p {
+        font-size: 1.7vw; /* vw 단위로 뷰포트에 따라 글자 크기 조절 */
+    }
+
+
+    .voguing-rm-text{
+        font-size:10px;
+    }
+
+    .voguing-person-div-2 > .person-div {
+        width: 30%; /* 컨테이너의 48%를 차지하도록 너비 설정 */
+        margin-left: 9%;
+        margin-right:9%;
+        margin-top: 40px;
+    }
+    .voguing-person-div{
+        width:100%;
+        height:950px;
+    }
+}

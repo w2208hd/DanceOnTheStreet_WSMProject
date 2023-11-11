@@ -1,0 +1,339 @@
+*{
+    margin: 0; 
+    padding: 0;
+}
+@font-face {
+    font-family: "NotoSansKRBlack"; /* 사용하고 싶은 font-family명을 지정 */
+    src: url("../fonts/NotoSansKR-Black.ttf") format("opentype"); /* 폰트파일 불러오기 */
+}
+@font-face {
+    font-family: "NotoSansKRBold"; /* 사용하고 싶은 font-family명을 지정 */
+    src: url("../fonts/NotoSansKR-Bold.ttf") format("opentype"); /* 폰트파일 불러오기 */
+}
+@font-face {
+    font-family: "NotoSansKRExtraBold"; /* 사용하고 싶은 font-family명을 지정 */
+    src: url("../fonts/NotoSansKR-ExtraBold.ttf") format("opentype"); /* 폰트파일 불러오기 */
+}
+@font-face {
+    font-family: "NotoSansKRRegular"; /* 사용하고 싶은 font-family명을 지정 */
+    src: url("../fonts/NotoSansKR-Regular.ttf") format("opentype"); /* 폰트파일 불러오기 */
+}
+
+/* body{
+    font-size: 1.5vw;
+} */
+/* p {
+    font-size: 0.9em; 100%보다 1.5배 크게 설정
+  } */
+
+/* 배경 */
+.breaking-pic-div{
+    width:100%;
+    height: 100vh;
+    /* padding-top: 50%; */
+    background-repeat: no-repeat;
+    background-size: cover;
+}   
+#breaking-pic-div-1{
+    background-image: url('../img/breaking-1.jpg');
+}
+#breaking-pic-div-2{
+    background-image: url('../img/breaking-2.jpg');
+}
+
+/* 제목 */
+.breaking-h1 {
+    position: absolute;
+    top: 12%;
+    left: 5%;
+    color: #8635C6;
+    font-size: 120px;
+    font-family: "NotoSansKRBlack";
+    font-style: italic;
+}
+
+.breaking-h2 {
+    position: absolute;
+    top: 35%; 
+    left: 5.5%;
+    color: white;
+    font-size: 50px;
+    font-family: "NotoSansKRExtraBold";
+}
+
+
+/* 문단 공통되는 것 */
+.breaking-div-text{
+    color:white;
+    font-family: "NotoSansKRRegular";
+    font-size:18px;
+}
+.breaking-rm-text{
+    color:white;
+    font-size:15px;
+    font-family: "NotoSansKRRegular";
+}
+
+
+/* 첫 번째 문단 */
+#breaking-div-text-1{
+    width:70%;
+    display:inline-block;
+}
+#breaking-explanation-div-1{
+    position:absolute;
+    top: 52%; 
+    left: 5%;
+}
+#breaking-div-rm-1{
+    position:absolute;
+    display:inline-block;
+    width:20%;
+    margin-left:30px;
+}
+#breaking-picture-1{
+    width: 100%;
+}
+#breaking-rm-text-1{
+    display:block;
+    left:35%;
+    display:block;
+}
+
+/* 두 번째 문단 */
+#breaking-explanation-div-2{
+    position:absolute;
+    top: 95%; 
+    left: 5%;
+}
+#breaking-div-text-2{
+    width:93%;
+    display:inline-block;
+}
+
+/* 세 번째 문단 */
+#breaking-div-text-3{
+    width:69%;
+    display:inline-block;
+    position:relative;
+    left:23%;
+}
+#breaking-div-text-3>p{ text-align: right;}
+#breaking-explanation-div-3{
+    position:absolute;
+    top: 130%; 
+    left: 3%;
+}
+#breaking-div-rm-3{
+    position:absolute;
+    display:inline-block;
+    width:18%;
+    margin-left:30px;
+}
+#breaking-picture-3{
+    width: 100%;
+}
+#breaking-rm-text-3{
+    display:block;
+    left:35%;
+}
+
+/* 네 번째 문단 */
+#breaking-explanation-div-4{
+    position:absolute;
+    top: 170%; 
+    left: 5%;
+}
+#breaking-div-text-4{
+    width:93%;
+    display:inline-block;
+}
+
+.breaking-div-text p {
+    font-size: 1.3vw; /* vw 단위로 뷰포트에 따라 글자 크기 조절 */
+}
+
+/* 인물 소개 */
+/* .breaking-person-div-2{
+    position:absolute;
+    top: 190%;
+} */
+.breaking-person-title{
+    color:#fff;
+    font-family: "NotoSansKRBlack";
+    font-size:40px;
+    padding-top:30px;
+    padding-left:50px;
+}
+.breaking-person-div{
+    width:100%;
+    height:550px;
+    background-color: #0B0B0B;
+}
+.person-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.person-img{
+    width:90%;
+    height:auto;
+    border-radius: 300px;
+    align-self: center;
+}
+.person-eng-name{
+    font-size:27px;
+}
+.person-eng-name, .person-han-name{
+    color:#fff;
+    font-family: "NotoSansKRBold";
+    text-align: center;
+}
+.person-explanation{
+    color:#fff;
+    font-family: "NotoSansKRRegular";
+    text-align: center;
+    font-size:14px;
+    width:100%;
+}
+.breaking-person-div-2>.person-div{
+    width:16%;
+    display:inline-block;   
+    margin-left: 4%;
+    margin-right:4%;
+    margin-top: 40px;
+    vertical-align: top; /* 상단 정렬을 위해 추가 */
+}
+
+footer{
+    width:100%;
+    height:250px;
+    background-color: #171717;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-text-h1{ 
+    font-family: "NotoSansKRBlack";
+    font-size:30px;
+    text-align: center;
+}
+.footer-text-p{
+    font-family: "NotoSansKRRegular";
+    font-size:16px;
+}
+
+    /* 태블릿 크기 */
+@media (min-width:767px) and (max-width:991px)  {
+    /* body {
+        font-size: 1.4em;
+    } */
+    /* 제목 */
+    .breaking-pic-div{
+        height: 75vh;
+    }   
+    .breaking-h1 {
+        font-size: 80px;
+    }
+    .breaking-h2 {
+        font-size: 30px;
+        top:28%;
+    }
+
+
+    .breaking-div-text{
+        font-size:13px;
+    }
+
+    #breaking-explanation-div-1{
+        top: 40%;
+    }
+    /* #breaking-div-rm-1{
+        margin-left:30   px;
+    } */
+    .breaking-div-text p {
+        font-size: 1.5vw; /* vw 단위로 뷰포트에 따라 글자 크기 조절 */
+    }
+    
+
+
+    #breaking-explanation-div-2{
+        top: 70%;
+    }
+    #breaking-explanation-div-3{
+        top: 95%;
+    }
+    #breaking-explanation-div-4{
+        top: 125%;
+    }
+
+    .breaking-person-div-2 > .person-div {
+        width: 30%; /* 컨테이너의 48%를 차지하도록 너비 설정 */
+        margin-left: 9%;
+        margin-right:9%;
+        margin-top: 40px;
+    }
+    .breaking-person-div{
+        width:100%;
+        height:1010px;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .breaking-pic-div{
+        height: 66vh;
+    }   
+    .breaking-h1 {
+        font-size: 50px;
+        top:10%;
+    }
+    
+    .breaking-h2 {
+        font-size: 20px;
+        top:20%;
+    }
+    /* .breaking-div-text{
+        font-size:10px;
+    } */
+    #breaking-explanation-div-1{
+        top: 26%; 
+    }
+    #breaking-div-rm-1{
+        margin-left:20px;
+    }
+    #breaking-explanation-div-2{
+        top: 55%;
+    }
+    #breaking-explanation-div-3{
+        top: 80%;
+    }
+    #breaking-div-rm-3{
+        margin-left:10px;
+    }
+    #breaking-explanation-div-4{
+        top: 110%;
+    }
+
+    .breaking-div-text p {
+        font-size: 1.7vw; /* vw 단위로 뷰포트에 따라 글자 크기 조절 */
+    }
+
+
+    .breaking-rm-text{
+        font-size:10px;
+    }
+
+    .breaking-person-div-2 > .person-div {
+        width: 30%; /* 컨테이너의 48%를 차지하도록 너비 설정 */
+        margin-left: 9%;
+        margin-right:9%;
+        margin-top: 40px;
+    }
+    .breaking-person-div{
+        width:100%;
+        height:950px;
+    }
+}

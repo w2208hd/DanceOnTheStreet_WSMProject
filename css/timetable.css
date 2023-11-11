@@ -1,0 +1,940 @@
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    @font-face {
+        font-family: "NotoSansKRBlack"; /* 사용하고 싶은 font-family명을 지정 */
+        src: url("../fonts/NotoSansKR-Black.ttf") format("opentype"); /* 폰트파일 불러오기 */
+    }
+    @font-face {
+        font-family: "NotoSansKRBold"; /* 사용하고 싶은 font-family명을 지정 */
+        src: url("../fonts/NotoSansKR-Bold.ttf") format("opentype"); /* 폰트파일 불러오기 */
+    }
+    @font-face {
+        font-family: "NotoSansKRExtraBold"; /* 사용하고 싶은 font-family명을 지정 */
+        src: url("../fonts/NotoSansKR-ExtraBold.ttf") format("opentype"); /* 폰트파일 불러오기 */
+    }
+    @font-face {
+        font-family: "NotoSansKRRegular"; /* 사용하고 싶은 font-family명을 지정 */
+        src: url("../fonts/NotoSansKR-Regular.ttf") format("opentype"); /* 폰트파일 불러오기 */
+    }
+    @font-face {
+        font-family: "NotoSansKRLight"; /* 사용하고 싶은 font-family명을 지정 */
+        src: url("../fonts/NotoSansKR-Light.ttf") format("opentype"); /* 폰트파일 불러오기 */
+    }
+    /* time-table-div-main */
+    .time-table-div-main {
+        width: 100vw;
+        height: 200vw;
+        background-image: url("../img/line1.jpg");
+        background-size: cover;
+    }
+
+    .time-table-div-main-2 {
+        padding-top: 10%;
+    }
+
+
+    .dance-history-div {
+        /* position: relative; */
+        width: 25%;
+        display: inline-block;
+    }
+
+    .dance-history-img {
+        width: 80%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        aspect-ratio: 1 / 1;
+        border-radius: 40%;
+    }
+
+    .dance-history-year {
+        color: white;
+        font-family: "NotoSansKRBlack";
+    }
+
+    .dance-history-explanation {
+        color: white;
+        font-family: "NotoSansKRLight";
+        font-size: 12px;
+    }
+
+    /* dance-history-div-1 */
+    #dance-history-div-1 {
+        position: relative;
+        left: 10%;
+        /* margin-top: -15%; */
+    }
+
+    #dance-history-1 {
+        width: 80%;
+        height: 100%;
+        /* display: block; */
+    }
+
+    #dance-history-text-1 {
+        display: block;
+        width: 85%; 
+    }
+
+    /* dance-history-div-2 */
+    #dance-history-div-2 {
+        position: relative;
+        left: 10%;
+        transform: translateY(-5%);
+        /* margin-top: -15%; */
+    }
+
+    #dance-history-2 {
+        width: 80%;
+        height: 100%;
+        /* display: block; */
+    }
+
+    #dance-history-text-2 {
+        /* display: block; */
+        /* width: 70%;  */
+    }
+
+    /* dance-history-div-3 */
+    #dance-history-div-3 {
+        position: relative;
+        left: 13%;
+        transform: translateY(-80%);
+        width: 30%;
+        display: inline-block;
+    }
+
+    #dance-history-3 {
+        width: 64%;
+        height: 100%;
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    #dance-history-text-3 {
+        display: inline-block;
+        width: 20%;
+        padding-left: 10px;
+
+    }
+
+    /* dance-history-div-4 */
+    #dance-history-div-4 {
+        position: relative;
+        left: 64.5%;
+        transform: translateY(-50%);
+        display: inline-block;
+        width: 30%;
+    }
+
+    #dance-history-4 {
+        width: 65%;
+        height: 100%;
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    #dance-history-text-4 {
+        display: inline-block;
+        width: 20%;
+        padding-left: 10px;
+
+    }
+
+
+    #dance-history-div-5 {
+        position: relative;
+        /* right:30%; */
+        margin-top: -27%;
+        left: 40%;
+        display: block;
+        width: 36%;
+    }
+
+    #dance-history-5 {
+        width: 54%;
+        height: 100%;
+        /* display: inline-block; */
+        /* vertical-align: top; */
+    }
+
+    #dance-history-text-5 {
+        /* display: inline-block; */
+        width: 75%;
+        padding-left: 10px;
+
+    }
+
+    #dance-history-div-6 {
+        position: relative;
+        margin-top: -21%;
+        display: block;
+        width: 36%;
+    }
+
+    #dance-history-6 {
+        width: 54%;
+        height: 100%;
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    #dance-history-text-6 {
+        display: inline-block;
+        width: 20%;
+        padding-left: 10px;
+
+    }
+
+    #dance-history-div-7 {
+        position: relative;
+        display: inline-block;
+        transform: translateY(-70%);
+        width: 36%;
+    }
+
+    #dance-history-7 {
+        width: 54%;
+        height: 100%;
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    #dance-history-text-7 {
+        display: inline-block;
+        width: 20%;
+        padding-left: 10px;
+    }
+
+
+    #dance-history-div-8 {
+        position: relative;
+        margin-top: 2%;
+        display: inline-block;
+        width: 30%;
+    }
+
+    #dance-history-8 {
+        width: 66%;
+        height: 100%;
+        display: block;
+        /* vertical-align: top; */
+    }
+
+    #dance-history-text-8 {
+        display: inline-block;
+        width: 50%;
+        padding-left: 10px;
+    }
+
+
+    #dance-history-div-9 {
+        position: relative;
+        left: 2%;
+        transform: translateY(-110%);
+        display: inline-block;
+        width: 27%;
+    }
+
+    #dance-history-9 {
+        display: block;
+        width: 70%;
+        height: 100%;
+    }
+
+    #dance-history-text-9 {
+        display: inline-block;
+        width: 90%;
+        padding-left: 10px;
+    }
+
+    /* dance-history-div-10 */
+    #dance-history-div-10 {
+        position: relative;
+        left: 70%;
+        transform: translateY(-130%);
+        display: inline-block;
+        width: 27%;
+    }
+
+    #dance-history-10 {
+        display: inline-block;
+        width: 70%;
+        height: 100%;
+    }
+
+    #dance-history-text-10 {
+        display: inline-block;
+        width: 20%;
+        padding-left: 10px;
+    }
+
+    /* dance-history-div-11 */
+    #dance-history-div-11 {
+        position: relative;
+        left: 70%;
+        transform: translateY(-120%);
+        display: block;
+        width: 27%;
+    }
+
+    #dance-history-11 {
+        display: inline-block;
+        width: 70%;
+        height: 100%;
+    }
+
+    #dance-history-text-11 {
+        display: inline-block;
+        width: 20%;
+        padding-left: 10px;
+    }
+
+    /* dance-history-div-12 */
+    #dance-history-div-12 {
+        position: relative;
+        left: 60%;
+        transform: translateY(-170%);
+        /* display: block;  */
+        width: 27%;
+    }
+
+    #dance-history-12 {
+        display: block;
+        width: 70%;
+        height: 100%;
+
+    }
+
+    #dance-history-text-12 {
+        display: block;
+        width: 70%;
+        padding-left: 10px;
+    }
+
+    /* dance-history-div-13 */
+    #dance-history-div-13 {
+        position: relative;
+        left: 0%;
+        transform: translateY(-220%);
+        display: inline-block;
+        width: 27%;
+    }
+
+    #dance-history-13 {
+        display: inline-block;
+        width: 70%;
+        height: 100%;
+
+    }
+
+    #dance-history-text-13 {
+        display: inline-block;
+        width: 70%;
+    }
+
+    /* dance-history-div-14 */
+    #dance-history-div-14 {
+        position: relative;
+        right: 50%;
+        transform: translateY(-220%);
+        display: inline-block;
+        width: 27%;
+    }
+
+    #dance-history-14 {
+        display: inline-block;
+        width: 70%;
+        height: 100%;
+
+    }
+
+    #dance-history-text-14 {
+        display: inline-block;
+        width: 70%;
+    }
+
+    /* dance-history-div-15 */
+    #dance-history-div-15 {
+        position: relative;
+        /* right:50%; */
+        display: block;
+        transform: translateY(-370%);
+        width: 50%;
+    }
+
+    #dance-history-15 {
+        display: inline-block;
+        width: 38%;
+        height: 100%;
+
+    }
+
+    #dance-history-text-15 {
+        display: inline-block;
+        vertical-align: top;
+        width: 25%;
+    }
+
+    /* dance-history-div-16 */
+    #dance-history-div-16 {
+        position: relative;
+        /* right:50%; */
+        display: block;
+        transform: translateY(-300%);
+        width: 50%;
+    }
+
+    #dance-history-16 {
+        display: inline-block;
+        width: 38%;
+        height: 100%;
+
+    }
+
+    #dance-history-text-16 {
+        display: inline-block;
+        width: 25%;
+        vertical-align: top;
+    }
+
+
+
+
+    footer {
+        width: 100%;
+        height: 500px;
+        background-color: #171717;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-text-h1 {
+        font-family: "NotoSansKRBlack";
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .footer-text-p {
+        font-family: "NotoSansKRRegular";
+        font-size: 16px;
+    }
+
+
+    @media (min-width:767px) and (max-width:991px) {
+        .dance-history-year {
+            color: white;
+            font-family: "NotoSansKRBlack";
+            font-size: 20px;
+        }
+
+        .dance-history-explanation {
+            color: white;
+            font-family: "Noto Sans KR Light";
+            font-size: 9px;
+        }
+
+    }
+
+    @media (max-width: 767px) {
+
+        .time-table-div-main {
+            background-image: url("../img/line2.jpg");
+            width: 100vw;
+            height: 470vw;
+        }
+
+        .time-table-div-main-2 {
+            margin-left: 4%;
+            display: flex;
+            flex-direction: column;
+        }
+
+
+        .dance-history-div {
+            width: 100%;
+            margin-top: 10%;
+        }
+
+        .dance-history-img {
+            width: 35%;
+            height: 30%;
+            aspect-ratio: 5 / 3;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 30%;
+            display: inline-block;
+        }
+
+        .dance-history-text {
+            width: 60%;
+            /* 나머지 공간을 텍스트가 차지하도록 설정 */
+            display: inline-block;
+            /* 텍스트를 인라인 블록으로 설정 */
+            vertical-align: top;
+            /* 텍스트의 상단을 이미지의 상단에 맞춤 */
+            padding-left: 10px;
+            /* 이미지와 텍스트 사이에 간격을 줌 */
+        }
+
+        /* dance-history-div-1 */
+        #dance-history-div-1 {
+            width: 90%;
+            margin-top: 10%;
+            transform: none;
+            left: 10%;
+        }
+
+        #dance-history-1 {
+            width: 35%;
+            height: 30%;
+            aspect-ratio: 5 / 3;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 30%;
+            display: inline-block;
+        }
+
+        #dance-history-text-1 {
+            width: 50%;
+            /* 나머지 공간을 텍스트가 차지하도록 설정 */
+            display: inline-block;
+            /* 텍스트를 인라인 블록으로 설정 */
+            vertical-align: top;
+            /* 텍스트의 상단을 이미지의 상단에 맞춤 */
+            padding-left: 10px;
+            /* 이미지와 텍스트 사이에 간격을 줌 */
+        }
+
+        /* dance-history-div-2 */
+        #dance-history-div-2 {
+            width: 90%;
+            margin-top: 10%;
+            transform: none;
+            left: 10%;
+        }
+
+        #dance-history-2 {
+            width: 35%;
+            height: 30%;
+            aspect-ratio: 5 / 3;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 30%;
+            display: inline-block;
+        }
+
+        #dance-history-text-2 {
+            width: 50%;
+            display: inline-block;
+            vertical-align: top;
+            padding-left: 10px;
+        }
+
+        /* dance-history-div-3 */
+        #dance-history-div-3 {
+            width: 90%;
+            margin-top: 10%;
+            transform: none;
+            left: 10%;
+        }
+
+        #dance-history-3 {
+            width: 35%;
+            height: 30%;
+            aspect-ratio: 5 / 3;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 30%;
+            display: inline-block;
+        }
+
+        #dance-history-text-3 {
+            width: 50%;
+            display: inline-block;
+            vertical-align: top;
+            padding-left: 10px;
+        }
+
+        /* dance-history-div-4 */
+        #dance-history-div-4 {
+            width: 90%;
+            margin-top: 10%;
+            transform: none;
+            left: 10%;
+        }
+
+        #dance-history-4 {
+            width: 35%;
+            height: 30%;
+            aspect-ratio: 5 / 3;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 30%;
+            display: inline-block;
+        }
+
+        #dance-history-text-4 {
+            width: 50%;
+            display: inline-block;
+            vertical-align: top;
+            padding-left: 10px;
+        }
+
+        /* dance-history-div-5 */
+        #dance-history-div-5 {
+            width: 90%;
+            margin-top: 10%;
+            transform: none;
+            left: 10%;
+        }
+
+        #dance-history-5 {
+            width: 35%;
+            height: 30%;
+            aspect-ratio: 5 / 3;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 30%;
+            display: inline-block;
+        }
+
+        #dance-history-text-5 {
+            width: 50%;
+            display: inline-block;
+            vertical-align: top;
+            padding-left: 10px;
+        }
+
+
+        /* dance-history-div-5 */
+        #dance-history-div-5 {
+            width: 90%;
+            margin-top: 10%;
+            transform: none;
+            left: 10%;
+        }
+
+        #dance-history-5 {
+            width: 35%;
+            height: 30%;
+            aspect-ratio: 5 / 3;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 30%;
+            display: inline-block;
+        }
+
+        #dance-history-text-5 {
+            width: 50%;
+            display: inline-block;
+            vertical-align: top;
+            padding-left: 10px;
+        }
+
+        /* dance-history-div-6 */
+        #dance-history-div-6 {
+            width: 90%;
+            margin-top: 10%;
+            transform: none;
+            left: 10%;
+        }
+
+        #dance-history-6 {
+            width: 35%;
+            height: 30%;
+            aspect-ratio: 5 / 3;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 30%;
+            display: inline-block;
+        }
+
+        #dance-history-text-6 {
+            width: 50%;
+            display: inline-block;
+            vertical-align: top;
+            padding-left: 10px;
+        }
+
+        /* dance-history-div-7 */
+        #dance-history-div-7 {
+            width: 90%;
+            margin-top: 10%;
+            transform: none;
+            left: 10%;
+        }
+
+        #dance-history-7 {
+            width: 35%;
+            height: 30%;
+            aspect-ratio: 5 / 3;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 30%;
+            display: inline-block;
+        }
+
+        #dance-history-text-7 {
+            width: 50%;
+            display: inline-block;
+            vertical-align: top;
+            padding-left: 10px;
+        }
+
+        /* dance-history-div-8 */
+        #dance-history-div-8 {
+            width: 90%;
+            margin-top: 10%;
+            transform: none;
+            left: 10%;
+        }
+
+        #dance-history-8 {
+            width: 35%;
+            height: 30%;
+            aspect-ratio: 5 / 3;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 30%;
+            display: inline-block;
+        }
+
+        #dance-history-text-8 {
+            width: 50%;
+            display: inline-block;
+            vertical-align: top;
+            padding-left: 10px;
+        }
+
+        /* dance-history-div-6 */
+        #dance-history-div-9 {
+            width: 90%;
+            margin-top: 10%;
+            transform: none;
+            left: 10%;
+        }
+
+        #dance-history-9 {
+            width: 35%;
+            height: 30%;
+            aspect-ratio: 5 / 3;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 30%;
+            display: inline-block;
+        }
+
+        #dance-history-text-9 {
+            width: 50%;
+            display: inline-block;
+            vertical-align: top;
+            padding-left: 10px;
+        }
+
+        /* dance-history-div-6 */
+        #dance-history-div-10 {
+            width: 90%;
+            margin-top: 10%;
+            transform: none;
+            left: 10%;
+        }
+
+        #dance-history-10 {
+            width: 35%;
+            height: 30%;
+            aspect-ratio: 5 / 3;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 30%;
+            display: inline-block;
+        }
+
+        #dance-history-text-10 {
+            width: 50%;
+            display: inline-block;
+            vertical-align: top;
+            padding-left: 10px;
+        }
+
+        /* dance-history-div-6 */
+        #dance-history-div-11 {
+            width: 90%;
+            margin-top: 10%;
+            transform: none;
+            left: 10%;
+        }
+
+        #dance-history-11 {
+            width: 35%;
+            height: 30%;
+            aspect-ratio: 5 / 3;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 30%;
+            display: inline-block;
+        }
+
+        #dance-history-text-11 {
+            width: 50%;
+            display: inline-block;
+            vertical-align: top;
+            padding-left: 10px;
+        }
+
+        /* dance-history-div-12 */
+        #dance-history-div-12 {
+            width: 90%;
+            margin-top: 10%;
+            transform: none;
+            left: 10%;
+        }
+
+        #dance-history-12 {
+            width: 35%;
+            height: 30%;
+            aspect-ratio: 5 / 3;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 30%;
+            display: inline-block;
+        }
+
+        #dance-history-text-12 {
+            width: 50%;
+            display: inline-block;
+            vertical-align: top;
+            padding-left: 10px;
+        }
+
+        /* dance-history-div-13 */
+        #dance-history-div-13 {
+            width: 90%;
+            margin-top: 10%;
+            transform: none;
+            left: 10%;
+        }
+
+        #dance-history-13 {
+            width: 35%;
+            height: 30%;
+            aspect-ratio: 5 / 3;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 30%;
+            display: inline-block;
+        }
+
+        #dance-history-text-13 {
+            width: 50%;
+            display: inline-block;
+            vertical-align: top;
+            padding-left: 10px;
+        }
+
+        /* dance-history-div-14 */
+        #dance-history-div-14 {
+            width: 90%;
+            margin-top: 10%;
+            transform: none;
+            left: 10%;
+        }
+
+        #dance-history-14 {
+            width: 35%;
+            height: 30%;
+            aspect-ratio: 5 / 3;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 30%;
+            display: inline-block;
+        }
+
+        #dance-history-text-14 {
+            width: 50%;
+            display: inline-block;
+            vertical-align: top;
+            padding-left: 10px;
+        }
+
+        /* dance-history-div-15 */
+        #dance-history-div-15 {
+            width: 90%;
+            margin-top: 10%;
+            transform: none;
+            left: 10%;
+        }
+
+        #dance-history-15 {
+            width: 35%;
+            height: 30%;
+            aspect-ratio: 5 / 3;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 30%;
+            display: inline-block;
+        }
+
+        #dance-history-text-15 {
+            width: 50%;
+            display: inline-block;
+            vertical-align: top;
+            padding-left: 10px;
+        }
+
+        /* dance-history-div-15 */
+        #dance-history-div-15 {
+            width: 90%;
+            margin-top: 10%;
+            transform: none;
+            left: 10%;
+        }
+
+        #dance-history-15 {
+            width: 35%;
+            height: 30%;
+            aspect-ratio: 5 / 3;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 30%;
+            display: inline-block;
+        }
+
+        #dance-history-text-15 {
+            width: 50%;
+            display: inline-block;
+            vertical-align: top;
+            padding-left: 10px;
+        }
+
+        /* dance-history-div-16 */
+        #dance-history-div-16 {
+            width: 90%;
+            margin-top: 10%;
+            transform: none;
+            left: 10%;
+        }
+
+        #dance-history-16 {
+            width: 35%;
+            height: 30%;
+            aspect-ratio: 5 / 3;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 30%;
+            display: inline-block;
+        }
+
+        #dance-history-text-16 {
+            width: 50%;
+            display: inline-block;
+            vertical-align: top;
+            padding-left: 10px;
+        }
+
+    }
